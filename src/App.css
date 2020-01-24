@@ -1,38 +1,71 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: #00f260; /* fallback for old browsers */
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+*:focus {
+  outline: 0 !important;
+}
+.search-box {
+  margin-top: 3vh;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.select-tag {
+  margin-top: 20px;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+select {
+  width: 200px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  margin-right: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loading {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  margin-left: 24%;
+  line-height: 30px;
+}
+input {
+  width: 40%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+button {
+  border: none;
+  width: 15%;
+  height: 40px;
   color: white;
+  background-color: #e92d6c;
+  cursor: pointer;
+}
+input::focus {
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 700px) {
+  button {
+    width: 25%;
   }
 }

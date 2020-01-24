@@ -1,0 +1,61 @@
+.container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 350px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.card .card-body .message {
+  padding-left: 80px;
+}
+
+.card .card-body .message::after {
+  clear: both;
+}
+
+.card .card-body {
+  margin-top: 5px;
+}
+
+.place-headline {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.loading-screen {
+  position: absolute;
+  top: 50vh;
+  left: 30%;
+  z-index: -1;
+}
+.spinner {
+  text-align: center;
+  margin-top: 10vh;
+}
+.loading-screen h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  opacity: 0.5;
+  color: rgb(78, 77, 77);
+}
+
+@media only screen and (max-width: 800px) {
+  .loading-screen {
+    left: 20%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .loading-screen {
+    left: 20%;
+  }
+  .loading-screen h1 {
+    font-size: 20px;
+  }
+}
