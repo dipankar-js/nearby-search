@@ -12,13 +12,7 @@ export default function Loader() {
 
   return (
     <div className="Glimm-Loader">
-      <DotLoader
-        css={override}
-        size={80}
-        //size={"150px"} this also works
-        color={"#e92d6c"}
-        loading={true}
-      />
+      <DotLoader css={override} size={80} color={"#e92d6c"} loading={true} />
     </div>
   );
 }

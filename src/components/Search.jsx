@@ -48,7 +48,7 @@ export default function Search() {
       distance +
       "&type=" +
       type +
-      "&key=AIzaSyDYc_h2K2gMZgLTrPEjQnBCQWrxdUF756k";
+      "&key=YOUR_API_KEY";
     axios
       .get(proxyurl + url)
       .then(res => {
